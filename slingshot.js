@@ -23,7 +23,7 @@ class Sling{
             var pointA = this.sling.bodyA.position;
             var pointB = this.pointB;
             strokeWeight(4);
-            stroke("#301608");
+            stroke("cyan");
             line(pointA.x, pointA.y, pointB.x, pointB.y);
             line(pointA.x,pointA.y,pointB.x,pointB.y);
             
