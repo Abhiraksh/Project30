@@ -17,6 +17,12 @@ class Sling{
         this.sling.bodyA = null;
     }
 
+    attach(body){
+
+        this.body.bodyA = body;
+          
+    }
+
     display(){
        
         if(this.sling.bodyA){
@@ -29,6 +35,8 @@ class Sling{
             
 
         }
+
+        
     }
     
 }

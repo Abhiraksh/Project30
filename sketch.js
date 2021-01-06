@@ -21,21 +21,21 @@ function setup(){
 
  // bottom part for tower1
  
- blk1 = new Box(310,260);
- blk2 = new Box(341,260);
- blk3 = new Box(372,260);
- blk4 = new Box(403,260);
- blk5 = new Box(434,260);
- blk6 = new Box(465,260);
- blk7 = new Box(496,260);
+ blk1 = new Box(310,280);
+ blk2 = new Box(341,280);
+ blk3 = new Box(372,280);
+ blk4 = new Box(403,280);
+ blk5 = new Box(434,280);
+ blk6 = new Box(465,280);
+ blk7 = new Box(496,280);
  
  // 2nd last layer for tower1
  
- blk8 = new Box(335,200);
- blk9 = new Box(366,200);
- blk10 = new Box(397,200);
- blk11 = new Box(428,200);
- blk12 = new Box(459,200);
+ blk8 = new Box(335,250);
+ blk9 = new Box(366,250);
+ blk10 = new Box(397,250);
+ blk11 = new Box(428,250);
+ blk12 = new Box(459,180);
 
  //  2nd layer for tower1
  
@@ -126,4 +126,12 @@ function mouseDragged(){
 
 function mouseReleased(){
     chain.fly();
+}
+
+function keyPressed(){
+
+    if(keyCode === 32){
+
+        chain.attach(poly.body);
+    }
 }
